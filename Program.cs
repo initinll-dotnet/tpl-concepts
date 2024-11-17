@@ -1,5 +1,6 @@
 ﻿using ConcurrentCollections;
 using DataSharingAndSynchronization;
+using TaskCoordination;
 using TaskProgramming;
 
 //// 1.TaskProgramming Concepts
@@ -22,4 +23,12 @@ using TaskProgramming;
 // ConcurrentStackDemo.Execute();
 // ConcurrentBagDemo.Execute();
 // BlockingCollectionDemo.Execute();
-ChannelDemo.Execute();
+// ChannelDemo.Execute();
+
+//// 4.TaskCoordination
+// CreatingContinuationsDemo.Execute();
+// ChildTasksDemo.Execute();
+// BarrierDemo.Execute();
+// CountDownEventDemo.Execute();
+// ResetEventsDemo.Execute();
+SemaphoreSlimDemo.Execute();
