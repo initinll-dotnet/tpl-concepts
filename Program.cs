@@ -1,5 +1,6 @@
-﻿using DataSharingAndSynchronization;
-// using TaskProgramming;
+﻿using ConcurrentCollections;
+using DataSharingAndSynchronization;
+using TaskProgramming;
 
 //// 1.TaskProgramming Concepts
 // IntroducingTasks.Execute();
@@ -13,4 +14,12 @@
 // InterlockedOperations.Execute();
 // SpinLocking.Execute();
 // MutexExample.Execute();
-ReaderWriterLocks.Execute();
+// ReaderWriterLocks.Execute();
+
+//// 3.ConcurrentCollections
+// ConcurrentDictionaryDemo.Execute();
+// ConcurrentQueueDemo.Execute();
+// ConcurrentStackDemo.Execute();
+// ConcurrentBagDemo.Execute();
+// BlockingCollectionDemo.Execute();
+ChannelDemo.Execute();

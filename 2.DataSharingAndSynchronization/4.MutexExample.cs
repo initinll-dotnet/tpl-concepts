@@ -128,7 +128,7 @@ public class MutexExample
             Console.WriteLine($"Sorry, {appName} is already running.");
             return;
         }
-        catch (WaitHandleCannotBeOpenedException e)
+        catch (WaitHandleCannotBeOpenedException)
         {
             Console.WriteLine("We can run the program just fine.");
             // first arg = whether to give current thread initial ownership
