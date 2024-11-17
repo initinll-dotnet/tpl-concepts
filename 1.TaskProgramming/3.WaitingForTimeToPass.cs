@@ -2,7 +2,7 @@ namespace TaskProgramming;
 
 public class WaitingForTimeToPass
 {
-    public static void Main()
+    public static void Execute()
     {
         // we've already seen the classic Thread.Sleep
 

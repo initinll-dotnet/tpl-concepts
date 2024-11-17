@@ -2,7 +2,7 @@ namespace TaskProgramming;
 
 public class WaitingForTasks
 {
-    public static void Main()
+    public static void Execute()
     {
         var cts = new CancellationTokenSource();
         cts.CancelAfter(TimeSpan.FromSeconds(3));

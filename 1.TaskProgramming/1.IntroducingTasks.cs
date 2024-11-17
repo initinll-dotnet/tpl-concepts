@@ -2,7 +2,7 @@ namespace TaskProgramming;
 
 public class IntroducingTasks
 {
-    public static void Main()
+    public static void Execute()
     {
         //CreateAndStartSimpleTasks();
         //TasksWithState();

@@ -1,7 +1,16 @@
-﻿using TaskProgramming;
+﻿using DataSharingAndSynchronization;
+// using TaskProgramming;
 
-// IntroducingTasks.Main();
-// CancelingTasks.Main();
-// WaitingForTimeToPass.Main();
-// WaitingForTasks.Main();
-ExceptionHandling.Main();
+//// 1.TaskProgramming Concepts
+// IntroducingTasks.Execute();
+// CancelingTasks.Execute();
+// WaitingForTimeToPass.Execute();
+// WaitingForTasks.Execute();
+// ExceptionHandling.Execute();
+
+//// 2.DataSharingAndSynchronization Concepts
+// CriticalSections.Execute();
+// InterlockedOperations.Execute();
+// SpinLocking.Execute();
+// MutexExample.Execute();
+ReaderWriterLocks.Execute();

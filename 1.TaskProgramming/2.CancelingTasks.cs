@@ -2,7 +2,7 @@ namespace TaskProgramming;
 
 public class CancelingTasks
 {
-    public static void Main()
+    public static void Execute()
     {
         CancelableTasks();
         MonitoringCancelation();
