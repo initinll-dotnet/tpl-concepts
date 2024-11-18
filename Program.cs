@@ -1,5 +1,6 @@
 ﻿using ConcurrentCollections;
 using DataSharingAndSynchronization;
+using ParallelLoops;
 using TaskCoordination;
 using TaskProgramming;
 
@@ -31,4 +32,10 @@ using TaskProgramming;
 // BarrierDemo.Execute();
 // CountDownEventDemo.Execute();
 // ResetEventsDemo.Execute();
-SemaphoreSlimDemo.Execute();
+// SemaphoreSlimDemo.Execute();
+
+//// 5.ParallelLoops
+// ParallelLoopsDemo.Execute();
+// BreakingAndStoppingDemo.Execute();
+// ThreadLocalStorageDemo.Execute();
+PartitioningDemo.Execute();
