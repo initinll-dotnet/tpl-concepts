@@ -1,5 +1,6 @@
 ﻿using ConcurrentCollections;
 using DataSharingAndSynchronization;
+using ParallelLinq;
 using ParallelLoops;
 using TaskCoordination;
 using TaskProgramming;
@@ -38,4 +39,10 @@ using TaskProgramming;
 // ParallelLoopsDemo.Execute();
 // BreakingAndStoppingDemo.Execute();
 // ThreadLocalStorageDemo.Execute();
-PartitioningDemo.Execute();
+// PartitioningDemo.Execute();
+
+//// 6.ParallelLinq
+// AsParallelExample.Execute();
+// CancellationAndExceptions.Execute();
+// MergeOptions.Execute();
+CustomAggregationDemo.Execute();
