@@ -37,7 +37,7 @@ public class CancellationAndExceptions
                 Console.WriteLine($"result = {c}, Main thread");
             }
         }
-        catch (OperationCanceledException e)
+        catch (OperationCanceledException)
         {
             Console.WriteLine($"Canceled");
         }

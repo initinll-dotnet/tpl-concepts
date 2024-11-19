@@ -1,4 +1,5 @@
-﻿using ConcurrentCollections;
+﻿using AsyncAwait;
+using ConcurrentCollections;
 using DataSharingAndSynchronization;
 using ParallelLinq;
 using ParallelLoops;
@@ -45,4 +46,11 @@ using TaskProgramming;
 // AsParallelExample.Execute();
 // CancellationAndExceptions.Execute();
 // MergeOptions.Execute();
-CustomAggregationDemo.Execute();
+// CustomAggregationDemo.Execute();
+
+//// 7.AsyncAwait
+// var asyncAwait = new AsyncAwaitDemo();
+// asyncAwait.Execute1();
+// await asyncAwait.Execute2();
+
+await AsyncFactoryMethod.Execute();
