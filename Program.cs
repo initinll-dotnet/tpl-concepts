@@ -49,8 +49,7 @@ using TaskProgramming;
 // CustomAggregationDemo.Execute();
 
 //// 7.AsyncAwait
-// var asyncAwait = new AsyncAwaitDemo();
+var asyncAwait = new AsyncAwaitDemo();
 // asyncAwait.Execute1();
-// await asyncAwait.Execute2();
-
-await AsyncFactoryMethod.Execute();
+await asyncAwait.Execute2();
+// await AsyncFactoryMethod.Execute();

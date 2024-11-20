@@ -51,7 +51,8 @@ public class AsyncAwaitDemo
         // Console.WriteLine($"Value 3 is {val3}");
         // Console.WriteLine("Value 3 Done");
 
-        await CalculateValueAsync4();
+        // await CalculateValueAsync4();
+        await CalculateValueAsync5();
     }
 
     private int CalculateValue()
@@ -213,6 +214,55 @@ public class AsyncAwaitDemo
         catch (Exception e)
         {
             Console.WriteLine($"Exception | {e.GetType().Name}: {e.Message}");
+        }
+    }
+
+    private async Task CalculateValueAsync5()
+    {
+        Console.WriteLine();
+
+        var cts = new CancellationTokenSource();
+        var token = cts.Token;
+
+        var t1 = Task.Run(() =>
+        {
+            Task.Delay(1000);
+            return 123;
+        }, cancellationToken: token);
+
+        var t2 = Task.Run(() =>
+        {
+            // throw new InvalidOperationException();
+            // cts.Token.ThrowIfCancellationRequested();
+            Task.Delay(10_000);
+            return 456;
+        }, cancellationToken: token);
+
+        // cts.Cancel();
+
+        await foreach (Task<int> completedTask in Task.WhenEach(t1, t2))
+        {
+            try
+            {
+                var result = await completedTask;
+
+                if (completedTask.Status == TaskStatus.RanToCompletion)
+                {
+                    Console.WriteLine($"Task result: {result}");
+                }
+                else if (completedTask.Status == TaskStatus.Faulted)
+                {
+                    Console.WriteLine($"Task faulted: {completedTask.Exception.InnerException.Message}");
+                }
+                else if (completedTask.Status == TaskStatus.Canceled)
+                {
+                    Console.WriteLine($"Task canceled.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Task encountered an error: {ex.Message}");
+            }
         }
     }
 }
